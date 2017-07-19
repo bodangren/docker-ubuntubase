@@ -1,7 +1,5 @@
 FROM ubuntu:xenial
 
-MAINTAINER "Duc Anh Babim" <ducanh.babim@yahoo.com>
-
 RUN rm -f /etc/motd && \
     echo "---" > /etc/motd && \
     echo "Support by Duc Anh Babim. Contact: ducanh.babim@yahoo.com" >> /etc/motd && \
@@ -25,4 +23,4 @@ RUN apt-get clean && \
     rm -f /etc/dpkg/dpkg.cfg.d/02apt-speedup
 
 ENV LC_ALL en_US.UTF-8
-ENV TZ Asia/Ho_Chi_Minh
+ENV TZ Asia/Shanghai
